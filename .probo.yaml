@@ -1,0 +1,5 @@
+steps:
+  - name: Probo Test
+    plugin: Shell
+    command: 'mv $SRC_DIR/index.php /var/www/html/index.php'
+
