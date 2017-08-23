@@ -1,6 +1,2 @@
 <?php
-
-phpinfo();
-
-echo "Done";
-echo "Done 2";
+echo "This is the first test";

@@ -1,3 +1,5 @@
+notifications:
+  webhook: https://michaelbagnall.com/l/listener.php
 steps:
   - name: Probo Test
     plugin: Shell
