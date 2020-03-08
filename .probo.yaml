@@ -1,6 +1,4 @@
-notifications:
-  webhook: https://michaelbagnall.com/l/listener.php
-image: proboci/ubuntu-14.04-lamp:php-5.6
+image: mbagnall/probo-lamp:php
 steps:
   - name: Basic Information Page
     command: 'mv $SRC_DIR/src /var/www/html'
