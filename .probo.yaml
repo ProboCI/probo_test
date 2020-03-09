@@ -1,4 +1,9 @@
 image: mbagnall/probo-lamp:php
+
 steps:
+  - name: Set PHP Version
+    plugin: LAMPApp
+    phpVersion: php7.3
+    
   - name: Basic Information Page
     command: 'mv $SRC_DIR/src /var/www/html'
