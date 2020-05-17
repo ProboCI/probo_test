@@ -1,9 +1,8 @@
-image: mbagnall/probo-lamp:php
+image: proboci/ubuntu:18.04-php7.4
 
 steps:
   - name: Set PHP Version
     plugin: LAMPApp
-    phpVersion: php7.4
     
   - name: Basic Information Page
     command: 'mv $SRC_DIR/src /var/www/html'
