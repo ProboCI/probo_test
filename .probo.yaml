@@ -1,7 +1,7 @@
 image: mbagnall/ubuntu:18.04-php8.0
 
 steps:
-  - name: Set PHP Version
+  - name: Set PHP Version 8.0
     plugin: LAMPApp
     
   - name: Basic Information Page
