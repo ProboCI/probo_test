@@ -18,5 +18,4 @@ steps:
   - name: Set Up Pre-requisites Database
     plugin: Drupal
     drupalVersion: 9
-    docroot: docroot/web
-    
+    subDirectory: docroot/web
