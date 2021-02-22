@@ -1,5 +1,26 @@
+image: mbagnall/ubuntu:18.04-php7.3
+assets:
+  - drupal.sql.gz
 steps:
-  - name: Probo Test
-    plugin: Shell
-    command: 'mv $SRC_DIR/src/index.php /var/www/html/index.php'
 
+  - name: Build Drupal 9
+    plugin: Script
+    script: |
+      rm -rf /var/www/html
+      cd $SRC_DIR
+      composer create-project drupal/recommended-project docroot
+      cd /src/docroot
+      composer require drush/drush drupal/admin_toolbar drupal/search_api drupal/search_api_solr mbagnall/gov-info
+      cd /src/docroot/web/modules
+      wget https://github.com/ElusiveMind/govinfo/archive/main.zip
+      unzip main.zip
+      cd /var/www
+      ln -s /src/docroot/web html
+      chmod -R 777 /src/docroot/web/sites/default
+
+  - name: Set Up Pre-requisites Database
+    plugin: Drupal
+    database: drupal.sql.gz
+    drupalVersion: 9
+    docroot: docroot/web
+    databaseGzipped: true
