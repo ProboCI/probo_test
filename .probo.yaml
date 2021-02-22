@@ -1,6 +1,4 @@
 image: mbagnall/ubuntu:18.04-php7.3
-assets:
-  - drupal.sql.gz
 steps:
 
   - name: Build Drupal 9
@@ -15,12 +13,10 @@ steps:
       wget https://github.com/ElusiveMind/govinfo/archive/main.zip
       unzip main.zip
       cd /var/www
-      ln -s /src/docroot/web html
       chmod -R 777 /src/docroot/web/sites/default
 
   - name: Set Up Pre-requisites Database
     plugin: Drupal
-    database: drupal.sql.gz
     drupalVersion: 9
     docroot: docroot/web
-    databaseGzipped: true
+    
