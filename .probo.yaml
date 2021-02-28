@@ -19,3 +19,4 @@ steps:
     drupalVersion: 9
     phpVersion: php7.4
     subDirectory: docroot/web
+
