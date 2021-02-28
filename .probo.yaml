@@ -17,5 +17,5 @@ steps:
   - name: Set Up Pre-requisites Database
     plugin: Drupal
     drupalVersion: 9
-    phpVersion: php8.0
+    phpVersion: php7.0
     subDirectory: docroot/web
