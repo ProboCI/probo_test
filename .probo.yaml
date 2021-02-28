@@ -1,5 +1,4 @@
 steps:
-
   - name: Build Drupal 9
     plugin: Script
     script: |
