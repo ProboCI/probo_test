@@ -14,6 +14,7 @@ steps:
       cd /var/www
       chmod -R 777 /src/docroot/web/sites/default
 
+
   - name: Set Up Pre-requisites Database
     plugin: Drupal
     drupalVersion: 9
