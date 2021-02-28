@@ -1,4 +1,3 @@
-image: mbagnall/ubuntu:18.04-php7.3
 steps:
 
   - name: Build Drupal 9
@@ -18,4 +17,5 @@ steps:
   - name: Set Up Pre-requisites Database
     plugin: Drupal
     drupalVersion: 9
+    phpVersion: php8.0
     subDirectory: docroot/web
