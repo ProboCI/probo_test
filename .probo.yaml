@@ -1,4 +1,4 @@
-image: proboci/ubuntu-14.04-lamp:php-5.6
+image: proboci/ubuntu:20.04-php8.1-mysql5.7
 steps:
   - name: Basic Information Page
     command: 'mv $SRC_DIR/docroot /var/www/html'
