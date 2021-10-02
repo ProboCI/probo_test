@@ -1,4 +1,6 @@
-image: proboci/ubuntu:20.04-php8.1-mysql5.7
+image: proboci/ubuntu:20.04-php7.4-mysql5.7
+notifications:
+  webhook: https://admin.powertools.sh/api/probo/v1/webhook
 steps:
   - name: Basic Information Page
     command: 'mv $SRC_DIR/docroot /var/www/html'
