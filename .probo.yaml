@@ -1,4 +1,4 @@
-image: proboci/ubuntu:20.04-php8.1-mysql5.7
+image: proboci/ubuntu:20.04-php8.0-mysql5.7
 
 steps:
   - name: Set PHP Version 8.1
