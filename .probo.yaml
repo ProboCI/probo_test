@@ -1,4 +1,4 @@
-image: proboci/ubuntu:20.04-php8.0
+image: proboci/ubuntu:20.04-php8.1
 #notifications:
 #  webhook: https://admin.powertools.sh/api/probo/v1/webhook
 steps:
