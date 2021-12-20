@@ -8,7 +8,7 @@ steps:
     command: 'mv $SRC_DIR/src /var/www/html'
 
   - name: Stop SOLR
-    command: sudo --user=solr /opt/solr/bin/solr stop -p 8983
+    command: /opt/solr/bin/solr stop -p 8983
   - name: Update SOLR
     plugin: Script
     script: |
@@ -21,4 +21,4 @@ steps:
       mv search_api_solr /opt/solr/.
       sudo -u solr -- /opt/solr/bin/solr create -c solr8 -d "/opt/solr/search_api_solr/jump-start/solr8/config-set"
   - name: Restart SOLR
-    command: sudo --user=solr /opt/solr/bin/solr start
+    command: /opt/solr/bin/solr start -force
