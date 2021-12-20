@@ -19,4 +19,4 @@ steps:
       rm -rf /opt/solr/search_api_solr
       tar xzf search_api_solr-4.2.3.tar.gz
       mv search_api_solr /opt/solr/.
-      sudo -u solr -- /opt/solr/bin/solr create -c drupal9 -d "/opt/solr/search_api_solr/jump-start/solr7/config-set"
+      sudo -u solr -- /opt/solr/bin/solr create -c solr8 -d "/opt/solr/search_api_solr/jump-start/solr8/config-set"
