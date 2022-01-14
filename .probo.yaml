@@ -1,9 +1,10 @@
-image: proboci/ubuntu:18.04-php7.2a
+image: proboci/ubuntu:18.04-php7.4
+assets:
+  - social.sql.gz
 
 steps:
-  - name: Set PHP Version 7.2a
+  - name: Set PHP Version 7.4
     plugin: LAMPApp
 
   - name: Basic Information Page
     command: 'mv $SRC_DIR/src /var/www/html'
-
