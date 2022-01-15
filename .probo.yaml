@@ -4,8 +4,6 @@ assets:
 
 steps:
   - name: Set PHP Version 7.4
-    database: social.sql.gz
-    databaseGzipped: true
     plugin: LAMPApp
 
   - name: Basic Information Page
