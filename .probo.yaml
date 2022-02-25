@@ -1,6 +1,7 @@
-steps:
+image: proboci/ubuntu:20.04-php8.1
 
-  - name: Build Drupal 9
+steps:
+  - name: Install Drupal 9
     plugin: Script
     script: |
       rm -rf /var/www/html
@@ -14,9 +15,8 @@ steps:
       cd /var/www
       chmod -R 777 /src/docroot/web/sites/default
 
-  - name: Set Up Pre-requisites Database
+  - name: Set Up Database For Drupal 9
     plugin: Drupal
     drupalVersion: 9
-    phpVersion: php8.0
     subDirectory: docroot/web
 
