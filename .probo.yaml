@@ -19,4 +19,3 @@ steps:
     plugin: Drupal
     drupalVersion: 9
     subDirectory: docroot/web
-
