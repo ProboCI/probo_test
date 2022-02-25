@@ -1,5 +1,10 @@
-steps:
-  - name: Probo Test
-    plugin: Shell
-    command: 'mv $SRC_DIR/src/index.php /var/www/html/index.php'
+image: proboci/ubuntu:18.04-php8.0
+assets:
+  - social.sql.gz
 
+steps:
+  - name: Set PHP Version 7.4
+    plugin: LAMPApp
+
+  - name: Basic Information Page
+    command: 'mv $SRC_DIR/src /var/www/html'
