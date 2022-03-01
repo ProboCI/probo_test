@@ -7,4 +7,4 @@ steps:
     plugin: LAMPApp
     database: social.sql.gz
     databaseGzipped: true
-    subdirectory: src
+    subDirectory: src
