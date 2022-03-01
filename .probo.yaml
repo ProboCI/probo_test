@@ -6,4 +6,5 @@ steps:
   - name: Import Database
     plugin: LAMPApp
     database: social.sql.gz
+    databaseGzipped: true
     subdirectory: src
