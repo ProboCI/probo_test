@@ -3,7 +3,7 @@ assets:
   - social.sql.gz
 
 steps:
-  - name: Import Database
+  - name: Import Database With Progress
     plugin: LAMPApp
     database: social.sql.gz
     databaseGzipped: true
