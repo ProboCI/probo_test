@@ -1,8 +1,7 @@
-image: proboci/ubuntu:20.04-php8.0
-
+image: proboci/ubuntu:18.04-php8.0
 steps:
-  - name: Set up our LAMP Plugin
-    plugin: LAMPApp
-
-  - name: Basic Information Page
-    command: 'mv $SRC_DIR/src /var/www/html'
+  - name: Create A Base Backdrop Site
+    plugin: Backdrop
+    runInstall: true
+    installArgs: --username=admin --password=Welcome12345 --email=mbagnall@zivtech.com --site-name="Backdrop Development"
+    subDirectory: ''
