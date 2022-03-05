@@ -1,5 +1,8 @@
 image: proboci/ubuntu:18.04-php8.0
 steps:
+  - name: Download a fresh copy of Backdrop CMS
+    command: bee -y download-core /src
+
   - name: Create A Base Backdrop Site
     plugin: Backdrop
     runInstall: true
