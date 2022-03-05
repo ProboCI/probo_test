@@ -6,5 +6,17 @@ steps:
   - name: Create A Base Backdrop Site
     plugin: Backdrop
     runInstall: true
-    installArgs: --username=admin --password=Welcome12345 --email="mbagnall@zivtech.com" --site-name="Backdrop Development" --auto
+    installArgs: --username=admin --password=Welcome12345 --site-name="Backdrop Development" --auto
     subDirectory: ''
+
+  - name: Install Entity Modules for OG
+    command: bee -y download entity_plus entity_ui entity_reference
+
+  - name: Enable modules
+    command: bee -y enable entity_plus entity_ui entity_reference
+
+  - name: Get Organic Groups
+    command: wget https://github.com/backdrop-contrib/og/archive/refs/heads/1.x-2.x.zip && unzip 1.x-2.x.zip && mv og-1.x-2.x /src/modules/og
+
+  - name: Enable Organic Groups
+    command: bee -y enable og
