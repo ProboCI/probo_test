@@ -10,13 +10,13 @@ steps:
     subDirectory: ''
 
   - name: Install Entity Modules for OG
-    command: bee -y download entity_plus entity_ui entity_reference
+    command: bee -y --root=/src download entity_plus entity_ui entity_reference
 
   - name: Enable modules
-    command: bee -y enable entity_plus entity_ui entity_reference
+    command: bee -y --root=/src enable entity_plus entity_ui entity_reference
 
   - name: Get Organic Groups
     command: wget https://github.com/backdrop-contrib/og/archive/refs/heads/1.x-2.x.zip && unzip 1.x-2.x.zip && mv og-1.x-2.x /src/modules/og
 
   - name: Enable Organic Groups
-    command: bee -y enable og
+    command: bee -y --root=/src enable og
