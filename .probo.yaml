@@ -1,11 +1,11 @@
 image: proboci/alpine:php8.0
 
-# assets:
-#   - social.sql.gz
+assets:
+  - social.sql.gz
 
 steps:
   - name: Import Database With Progress
     plugin: LAMPApp
-    # database: social.sql.gz
-    # databaseGzipped: true
+    database: social.sql.gz
+    databaseGzipped: true
     subDirectory: src
