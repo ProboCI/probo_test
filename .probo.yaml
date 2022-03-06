@@ -1,4 +1,4 @@
-image: proboci/ubuntu:18.04-php8.0
+image: proboci/alpine:php8.0
 steps:
   - name: Download a fresh copy of Backdrop CMS
     command: bee -y download-core /src && cd /src && chmod -R 777 *
