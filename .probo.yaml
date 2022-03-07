@@ -22,4 +22,4 @@ steps:
     command: bee -y --root=/src enable og og_access og_context og_field_access og_register og_ui
 
   - name: Fix files directory permissions due to og install
-    command: chown -R www-data:www-data /src
+    command: chown -R apache:apache /src
