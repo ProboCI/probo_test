@@ -3,6 +3,12 @@ steps:
   - name: Download a fresh copy of Backdrop CMS
     command: bee -y download-core /src && cd /src && chmod -R 777 *
 
+  - name: Setup File System
+    plugin: Script
+    script: |
+      rm -rf /var/www/html
+      cd $SRC_DIR
+
   - name: Create A Base Backdrop Site
     plugin: Backdrop
     runInstall: true
