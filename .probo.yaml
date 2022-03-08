@@ -15,6 +15,8 @@ steps:
     plugin: Drupal
     drupalVersion: 9
     subDirectory: docroot/web
+    phpIniOptions:
+      memory_limit: 512M
 
   - name: Run the Drupal 9 Site Installation
     plugin: Script
