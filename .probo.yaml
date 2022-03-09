@@ -1,7 +1,7 @@
 image: proboci/alpine:php8.0
 
 steps:
-  - name: Copy Drupal 9 Files From Drupal.org
+  - name: Drupal 9 Files From Drupal.org
     plugin: Script
     script: |
       rm -rf /var/www/html
