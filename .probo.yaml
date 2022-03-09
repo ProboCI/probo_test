@@ -1,7 +1,7 @@
 image: proboci/ubuntu:20.04-php8.1
 
 steps:
-  - name: Copy Drupal 10 Files From Drupal
+  - name: Drupal 10 Files From Drupal
     plugin: Script
     script: |
       rm -rf /var/www/html
