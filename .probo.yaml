@@ -6,9 +6,10 @@ steps:
     script: |
       rm -rf /var/www/html
       cd $SRC_DIR
-      composer create-project drupal/recommended-project:10.0.0-alpha2 docroot
+      composer create-project drupal/recommended-project:10.0.0-alpha4   docroot
       cd /src/docroot
-      composer require drush/drush:11.x-dev drupal/admin_toolbar
+      composer require drush/drush:^11 drupal/admin_toolbar
+      composer require 
       chmod -R 777 /src/docroot/web/sites/default
 
   - name: Set Up Database For Drupal 10
