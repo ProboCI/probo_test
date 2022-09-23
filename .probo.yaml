@@ -1,4 +1,4 @@
-image: docker.flyingflip.com/probo/ubuntu:22.04-php8.0
+image: docker.flyingflip.com/probo/ubuntu:22.04-php8.1
 
 steps:
   - name: 2 - Install Drupal 10 Files From Drupal
@@ -6,7 +6,7 @@ steps:
     script: |
       rm -rf /var/www/html
       cd $SRC_DIR
-      composer create-project drupal/recommended-project:10.0.0-alpha4   docroot
+      composer create-project drupal/recommended-project:10.0.0-beta1   docroot
       cd /src/docroot
       composer require drush/drush:^11 drupal/admin_toolbar
       composer require 
