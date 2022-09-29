@@ -1,4 +1,4 @@
-image: docker.flyingflip.com/probo/ubuntu:18.04-php7.0
+image: docker.flyingflip.com/probo/ubuntu:18.04-php7.1
 steps:
   - name: Set up our LAMP Plugin
     plugin: LAMPApp
@@ -6,3 +6,4 @@ steps:
     command: 'mv $SRC_DIR/src /var/www/html'
   - name: Versionizer output
     command: versionizer
+git
