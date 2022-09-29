@@ -6,4 +6,3 @@ steps:
     command: 'mv $SRC_DIR/src /var/www/html'
   - name: Versionizer output
     command: versionizer
-git
