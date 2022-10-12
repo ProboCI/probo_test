@@ -2,7 +2,6 @@ image: docker.flyingflip.com/probo/alpine:php8.1
 steps:
   - name: Set up our LAMP Plugin
     plugin: LAMPApp
-  - name: Basic Information Page
-    command: 'mv $SRC_DIR/src /var/www/html'
+    subDirectory: src
   - name: Versionizer output
     command: versionizer
