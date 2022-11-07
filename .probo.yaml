@@ -1,4 +1,5 @@
 image: flyingflip/alpine:php8.1-arm
+
 steps:
   - name: Set up our LAMP Plugin
     plugin: LAMPApp
