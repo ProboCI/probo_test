@@ -6,3 +6,4 @@ steps:
     subDirectory: src
   - name: Versionizer output
     command: versionizer
+    
