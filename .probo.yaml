@@ -1,4 +1,4 @@
-image: docker.flyingflip.com/probo/alpine:php8.1
+image: flyingflip/alpine:php8.1-arm
 steps:
   - name: Set up our LAMP Plugin
     plugin: LAMPApp
