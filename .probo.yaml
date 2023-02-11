@@ -1,4 +1,6 @@
 image: docker.flyingflip.com/probo/ubuntu:18.04-php8.0
+notifications:
+  webhook: https://www.openprobo.ci/api/v1/event 
 steps:
   - name: Set up our LAMP Plugin
     plugin: LAMPApp
@@ -6,3 +8,4 @@ steps:
     command: 'mv $SRC_DIR/src /var/www/html'
   - name: Versionizer output
     command: versionizer
+1
