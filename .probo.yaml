@@ -1,5 +1,4 @@
-image: flyingflip/alpine:php8.1-arm
-
+image: proboci/ubuntu:22.04-php8.1
 steps:
   - name: Set up our LAMP Plugin
     plugin: LAMPApp
