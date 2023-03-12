@@ -1,6 +1,5 @@
-image: docker.flyingflip.com/probo/ubuntu:18.04-php8.0
-notifications:
-  webhook: https://www.openprobo.ci/api/v1/event 
+image: proboci/ubuntu:18.04-php8.0
+
 steps:
   - name: Set up our LAMP Plugin 18.04
     plugin: LAMPApp
