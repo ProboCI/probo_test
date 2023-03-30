@@ -2,6 +2,11 @@ image: proboci/ubuntu:20.04-php7.4
 steps:
   - name: Set up our LAMP Plugin
     plugin: LAMPApp
+    phpIniOptions:
+      all:
+        memory_limit: 512M
+      apache2:
+        max_execution_time: 300
   - name: Basic Information Page
     command: 'mv $SRC_DIR/src /var/www/html'
   - name: Versionizer output
