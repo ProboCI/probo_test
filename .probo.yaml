@@ -1,7 +1,9 @@
-image: proboci/ubuntu:20.04-php8.2
+image: proboci/ubuntu:18.04-php8.3
 steps:
   - name: Set up our LAMP Plugin
     plugin: LAMPApp
+    phpIniOptions:
+      memory_limit: 1024M
     subDirectory: src
   - name: Versionizer output
     command: versionizer
