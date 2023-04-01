@@ -1,8 +1,9 @@
 image: proboci/ubuntu:18.04-php8.0
-
 steps:
-  - name: Set up our LAMP Plugin 18.04
+  - name: Set up our LAMP Plugin
     plugin: LAMPApp
+    phpIniOptions:
+      memory_limit: 1024M
   - name: Basic Information Page
     command: 'mv $SRC_DIR/src /var/www/html'
   - name: Versionizer output
