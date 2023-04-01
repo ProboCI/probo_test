@@ -1,4 +1,4 @@
-image: proboci/ubuntu:18.04-php5.1
+image: proboci/ubuntu:18.04-php7.1
 steps:
   - name: Set up our LAMP Plugin
     plugin: LAMPApp
