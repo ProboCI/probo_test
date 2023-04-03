@@ -11,6 +11,7 @@ steps:
     plugin: Drupal
     clearCaches: false
     subDirectory: drupal/web
+    databaseUpdates: false
     drupalVersion: 10
     configSyncDirectory: ../config/sync
     phpIniOptions:
