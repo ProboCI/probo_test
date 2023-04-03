@@ -21,13 +21,20 @@ steps:
   - name: Install Drupal
     plugin: Script
     script: |
-     drush site:install -y \
+     drush -r /var/www/html site:install -y \
       --db-url=mysql://root:strongpassword@localhost/drupal \
       --account-name=admin \
       --account-pass=password \
       --account-mail=mbagnall@gmail.com \
       --site-mail=mbagnall@gmail.com \
-      --site-name="Probo Test Build" \
+      --site-name="Probo"
+  - name: Drush test
+    plugin: Script
+    script: |
+      drush status
+      drush updb
+      drush cr
+      drush cex
 
   - name: Versionizer output
     command: versionizer
