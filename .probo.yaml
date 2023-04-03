@@ -1,8 +1,32 @@
 image: proboci/ubuntu:22.04-php8.0
 steps:
-  - name: Set up our LAMP Plugin
-    plugin: LAMPApp
-  - name: Basic Information Page
-    command: 'mv $SRC_DIR/src /var/www/html'
+  - name: Install Drupal Files From Composer
+    plugin: Script
+    script: |
+      cd /src
+      composer create-project drupal/recommended-project drupal
+      cd drupal/web
+      composer require drush/drush
+  - name: Setup Drupal Plugin
+    plugin: Drupal
+    clearCaches: false
+    subDirectory: drupal/web
+    drupalVersion: 10
+    configSyncDirectory: ../config/sync
+    phpIniOptions:
+      upload_max_filesize: 50M
+      post_max_size: 25M
+      memory_limit: 512M
+  - name: Install Drupal
+    plugin: Script
+    script: |
+     drush site:install -y \
+      --db-url=mysql://root:strongpassword@localhost/drupal \
+      --account-name=admin \
+      --account-pass=password \
+      --account-mail=mbagnall@gmail.com \
+      --site-mail=mbagnall@gmail.com \
+      --site-name="Probo Test Build" \
+
   - name: Versionizer output
     command: versionizer
