@@ -40,5 +40,3 @@ steps:
       drush cr
       drush cex
 
-  - name: Versionizer output
-    command: versionizer
