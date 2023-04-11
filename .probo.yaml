@@ -28,10 +28,6 @@ steps:
       --account-mail=mbagnall@gmail.com \
       --site-mail=mbagnall@gmail.com \
       --site-name="Probo"
-  - name: Install Drush
-    script: |
-      cd /var/www/html
-      composer require drush/drush
   - name: Drush test
     plugin: Script
     script: |
