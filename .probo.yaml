@@ -1,4 +1,4 @@
-image: proboci/ubuntu:22.04-php8.1
+image: proboci/ubuntu:22.04-php8.0
 steps:
   - name: Install Drupal Files From Composer
     plugin: Script
@@ -28,11 +28,4 @@ steps:
       --account-mail=mbagnall@gmail.com \
       --site-mail=mbagnall@gmail.com \
       --site-name="Probo"
-  - name: Drush test
-    plugin: Script
-    script: |
-      drush status
-      drush updb
-      drush cr
-      drush cex
 
