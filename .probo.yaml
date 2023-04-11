@@ -6,7 +6,7 @@ steps:
       cd /src
       composer create-project drupal/recommended-project:^9 drupal
       cd drupal/web
-      composer require drush/drush
+      composer require drush/drush:^10
   - name: Setup Drupal Plugin
     plugin: Drupal
     clearCaches: false
