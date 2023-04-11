@@ -1,4 +1,4 @@
-image: proboci/ubuntu:22.04-php8.0
+image: proboci/ubuntu:22.04-php8.1
 steps:
   - name: Install Drupal Files From Composer
     plugin: Script
