@@ -1,10 +1,10 @@
-image: proboci/ubuntu:22.04-php8.1
+image: proboci/ubuntu:22.04-php8.0
 steps:
   - name: Install Drupal Files From Composer
     plugin: Script
     script: |
       cd /src
-      composer create-project drupal/recommended-project drupal
+      composer create-project drupal/recommended-project:^9 drupal
       cd drupal/web
       composer require drush/drush
   - name: Setup Drupal Plugin
