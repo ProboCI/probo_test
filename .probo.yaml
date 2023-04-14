@@ -1,5 +1,5 @@
 image: proboci/ubuntu:18.04-php7.4
-steps:-
+steps:
   - name: Set up our LAMP Plugin
     plugin: LAMPApp
     phpIniOptions:
