@@ -4,6 +4,8 @@ steps:
     plugin: LAMPApp
     phpIniOptions:
       memory_limit: 1024M
+  - name: Get Latest Backup From S3
+    command: source $ASSET_DIR/aws.sh; retrieve-from-aws aws-export.sql.gz
   - name: Basic Information Page
     command: 'mv $SRC_DIR/src /var/www/html'
   - name: Versionizer output
