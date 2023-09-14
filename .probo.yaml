@@ -1,4 +1,6 @@
 image: proboci/ubuntu:22.04-php8.3
+assets:
+  - aws.sh
 steps:
   - name: Set up our LAMP Plugin
     plugin: LAMPApp
