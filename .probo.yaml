@@ -1,4 +1,5 @@
 image: proboci/ubuntu:22.04-php8.2
+steps:
   - name: Set up our LAMP Plugin
     plugin: LAMPApp
     phpIniOptions:
