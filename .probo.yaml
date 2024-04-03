@@ -1,8 +1,10 @@
 image: proboci/ubuntu:22.04-php8.2
-steps:
   - name: Set up our LAMP Plugin
     plugin: LAMPApp
-    subDirectory: src
+    phpIniOptions:
+      memory_limit: 1024M
+  - name: Basic Information Page
+    command: 'mv $SRC_DIR/src /var/www/html'
   - name: Versionizer output
     command: versionizer
     
