@@ -1,6 +1,6 @@
 image: proboci/ubuntu:22.04-php8.3
 steps:
-  - name: Set up our LAMP Plugin
+  - name: Set up our LAMP Plugin For New PHP
     plugin: LAMPApp
     phpIniOptions:
       memory_limit: 1024M
