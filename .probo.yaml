@@ -1,4 +1,4 @@
-image: proboci/alpine:php8.1
+image: proboci/alpine:php8.3
 
 steps:
   - name: Set up our LAMP Plugin
