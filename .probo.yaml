@@ -1,5 +1,5 @@
-image: proboci/alpine:php8.2
 
+image: proboci/alpine:php8.2
 steps:
   - name: Set up our LAMP Plugin
     plugin: LAMPApp
@@ -7,6 +7,8 @@ steps:
       memory_limit: 512M
       max_execution_time: 300
     subDirectory: src
+  - name: Basic Information Page
+    command: 'mv $SRC_DIR/src /var/www/html'
   - name: Versionizer output
     command: versionizer
     
