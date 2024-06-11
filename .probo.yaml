@@ -1,6 +1,6 @@
-image: proboci/ubuntu:24.04-php8.1
+image: proboci/ubuntu:22.04-php8.2-beta
 steps:
-  - name: Testing 22.04 - PHP 8.1
+  - name: PHP 8.2 - Beta Server Testing
     plugin: LAMPApp
     phpIniOptions:
       memory_limit: 1024M
