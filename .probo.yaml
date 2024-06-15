@@ -1,6 +1,7 @@
 image: proboci/ubuntu:22.04-php8.2-beta
 steps:
   - name: PHP 8.2 - Beta Server Testing
+    database: mariadb-10.6
     plugin: LAMPApp
     phpIniOptions:
       memory_limit: 1024M
