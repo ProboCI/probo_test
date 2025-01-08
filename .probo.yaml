@@ -6,6 +6,4 @@ steps:
       memory_limit: 1024M
   - name: Basic Information Page
     command: 'mv $SRC_DIR/src /var/www/html'
-  - name: Versionizer output
-    command: versionizer
     
