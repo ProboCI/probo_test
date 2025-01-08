@@ -1,6 +1,6 @@
 image: proboci/alpine:php8.4
 steps:
-  - name: Set up our LAMP Plugin
+  - name: Set up our Testinig LAMP Plugin Environment
     plugin: LAMPApp
     phpIniOptions:
       memory_limit: 512M
