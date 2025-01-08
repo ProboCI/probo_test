@@ -1,6 +1,6 @@
 image: proboci/ubuntu:22.04-php8.4
 steps:
-  - name: Testing 22.04 - PHP 8.4
+  - name: Testing Ubuntu 22.04 - PHP 8.4
     plugin: LAMPApp
     phpIniOptions:
       memory_limit: 1024M
