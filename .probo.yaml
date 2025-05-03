@@ -1,4 +1,4 @@
-image: proboci/alpine:php8.3
+image: flyingflip/alpine:php8.1
 steps:
   - name: Set up our Testinig LAMP Plugin Environment
     plugin: LAMPApp
