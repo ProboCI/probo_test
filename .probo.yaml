@@ -1,6 +1,6 @@
 image: flyingflip/alpine:php8.1
 steps:
-  - name: Set up our Testinig LAMP Plugin Environment
+  - name: Testing
     plugin: LAMPApp
     phpIniOptions:
       memory_limit: 512M
