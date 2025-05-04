@@ -1,4 +1,6 @@
 image: flyingflip/ubuntu:php8.3
+notifications:
+  webhook: https://service.pipedream.sh/notifier.php
 steps:
   - name: Testing
     plugin: LAMPApp
