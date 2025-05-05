@@ -1,10 +1,13 @@
-image: proboci/ubuntu:22.04-php8.3
+image: flyingflip/ubuntu:php8.3
+notifications:
+  webhook: https://service.pipedream.sh/notifier.php
 steps:
-  - name: Set up our LAMP Plugin
+  - name: Testing
     plugin: LAMPApp
     phpIniOptions:
-      memory_limit: 1024M
-  - name: Basic Information Page
-    command: 'mv $SRC_DIR/src /var/www/html'
+      memory_limit: 512M
+      max_execution_time: 300
+    subDirectory: src
   - name: Versionizer output
     command: versionizer
+    
