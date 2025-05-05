@@ -1,4 +1,4 @@
-image: flyingflip/ubuntu:php8.1
+image: flyingflip/ubuntu:php7.4
 notifications:
   webhook: https://service.pipedream.sh/notifier.php
 steps:
