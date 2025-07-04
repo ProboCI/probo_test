@@ -6,6 +6,5 @@ steps:
       memory_limit: 512M
       max_execution_time: 300
     subDirectory: src
-  - name: OUTPUT STUFF
-    command: versionizer
+
     
