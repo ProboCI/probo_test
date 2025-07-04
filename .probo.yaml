@@ -3,7 +3,7 @@ steps:
   - name: Testing
     plugin: LAMPApp
     phpIniOptions:
-      memory_limit: 368M
+      memory_limit: 369M
       max_execution_time: 300
     subDirectory: src
 
