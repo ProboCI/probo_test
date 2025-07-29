@@ -1,4 +1,4 @@
-image: flyingflip/ubuntu:php8.5
+image: flyingflip/alpine:php8.5
 steps:
   - name: Testing
     plugin: LAMPApp
