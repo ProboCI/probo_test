@@ -1,9 +1,9 @@
-image: flyingflip/alpine:php8.2
+image: flyingflip/ubuntu:php8.4
 steps:
   - name: Testing
     plugin: LAMPApp
     phpIniOptions:
-      memory_limit: 379M
+      memory_limit: 400M
       max_execution_time: 300
     subDirectory: src
 
