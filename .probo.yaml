@@ -1,4 +1,4 @@
-image: proboci/alpine:php8.3
+image: proboci/ubuntu:php8.3
 steps:
   - name: Testing
     plugin: LAMPApp
