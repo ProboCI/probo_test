@@ -1,6 +1,4 @@
-image: flyingflip/ubuntu:php8.1
-notifications:
-  webhook: https://service.pipedream.sh/notifier.php
+image: proboci/ubuntu:php8.2
 steps:
   - name: Testing
     plugin: LAMPApp
@@ -8,6 +6,5 @@ steps:
       memory_limit: 512M
       max_execution_time: 300
     subDirectory: src
-  - name: Versionizer output
-    command: versionizer
+
     
