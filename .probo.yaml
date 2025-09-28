@@ -1,6 +1,6 @@
-image: proboci/ubuntu:php7.1
+image: proboci/ubuntu:php7.3
 steps:
-  - name: Testing
+  - name: Testing PHP 7.3
     plugin: LAMPApp
     phpIniOptions:
       memory_limit: 512M
