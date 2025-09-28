@@ -1,4 +1,4 @@
-image: proboci/ubuntu:php7.1
+image: proboci/ubuntu:php7.4
 steps:
   - name: Testing
     plugin: LAMPApp
