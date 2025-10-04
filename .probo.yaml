@@ -1,7 +1,7 @@
 type: lamp
 dist: ubuntu
 php: 8.5
-database: mariadb:11
+database: mariadb:11.4
 solr:
   version: 8.11.4
   core: /path/to/core
