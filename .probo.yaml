@@ -1,8 +1,11 @@
 type: lamp
 dist: ubuntu
 php: 8.5
-database: mysql:8.0
-solr: 8.11.4
+database: postgresql:15
+solr:
+  version: 8.11.4
+  core: /path/to/core
+
 
 steps:
   - name: Testing
