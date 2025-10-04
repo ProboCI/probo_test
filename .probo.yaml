@@ -1,7 +1,7 @@
 type: lamp
 dist: ubuntu
 php: 8.5
-database: postgres:15
+database: mysql:5.7
 solr:
   version: 8.11.4
   core: /path/to/core
