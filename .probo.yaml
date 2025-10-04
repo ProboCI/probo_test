@@ -1,4 +1,8 @@
-image: proboci/ubuntu:php8.5
+type: lamp
+php: 8.5
+database: mysql:8.0
+solr: 8.11.4
+
 steps:
   - name: Testing
     plugin: LAMPApp
