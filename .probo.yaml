@@ -1,6 +1,6 @@
 type: lamp
 dist: ubuntu
-php: 7.0
+php: 7.1
 database: mysql:5.7
 solr:
   name: drupal
