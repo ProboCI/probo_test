@@ -5,7 +5,9 @@ database: mariadb:11.8
 solr:
   name: drupal
   version: 8.11.4
-  core: /path/to/core
+  core_archive: solr8.zip
+  core_folder: solr8
+  compression: zip
 
 steps:
   - name: Testing
