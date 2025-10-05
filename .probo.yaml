@@ -1,4 +1,12 @@
-image: proboci/ubuntu:php8.3
+type: lamp
+dist: ubuntu
+php: 8.3
+database: mysql:8.0
+solr:
+  name: drupal
+  version: 8.11.4
+  core: /path/to/core
+
 steps:
   - name: Testing
     plugin: LAMPApp
