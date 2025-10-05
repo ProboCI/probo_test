@@ -1,6 +1,14 @@
-image: proboci/ubuntu:php7.0
+type: lamp
+dist: ubuntu
+php: 5.6
+database: mysql:5.7
+solr:
+  name: drupal
+  version: 8.11.4
+  core: /path/to/core
+
 steps:
-  - name: Testing PHP 7.0
+  - name: Testing
     plugin: LAMPApp
     phpIniOptions:
       memory_limit: 512M
