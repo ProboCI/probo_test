@@ -3,6 +3,7 @@ dist: ubuntu
 php: 8.4
 database: mysql:8.4
 solr:
+  name: drupal
   version: 8.11.4
   core: /path/to/core
 
