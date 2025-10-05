@@ -6,7 +6,6 @@ solr:
   version: 8.11.4
   core: /path/to/core
 
-
 steps:
   - name: Testing
     plugin: LAMPApp
