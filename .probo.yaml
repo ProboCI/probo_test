@@ -1,3 +1,5 @@
+assets:
+  - solr8.zip
 type: lamp
 dist: ubuntu
 php: 8.2
