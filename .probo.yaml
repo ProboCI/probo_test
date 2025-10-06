@@ -1,5 +1,5 @@
 assets:
-  - name: solr8.zip
+  - solr8.zip
 type: lamp
 dist: ubuntu
 php: 5.6
