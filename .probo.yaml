@@ -1,11 +1,15 @@
+assets:
+  - name: solr8.zip
 type: lamp
 dist: ubuntu
 php: 5.6
-database: mariadb:10.11
+database: mysql:5.7
 solr:
   name: drupal
   version: 8.11.4
-  core: /path/to/core
+  core_archive: solr8.zip
+  core_folder: solr8
+  compression: zip
 
 steps:
   - name: Testing
