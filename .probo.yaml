@@ -2,7 +2,7 @@ assets:
   - solr8.zip
 type: lamp
 dist: ubuntu
-php: 8.5
+php: '8.5'
 database: mariadb:11.8
 solr:
   name: drupal
