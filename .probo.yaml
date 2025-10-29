@@ -3,8 +3,14 @@ assets:
 type: lamp
 dist: ubuntu
 php: 8.5
-nodejs: 24
+nodejs: 8
 database: mariadb:11.8
+solr:
+  name: drupal
+  version: 8
+  core_archive: solr8.zip
+  core_folder: solr8
+  compression: zip
 
 steps:
   - name: Testing
