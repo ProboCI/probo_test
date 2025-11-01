@@ -3,7 +3,7 @@ assets:
 type: lamp
 php: 8.3
 nodejs: 8
-database: mssql
+database: mariadb:11.8
 solr:
   name: drupal
   version: 8
