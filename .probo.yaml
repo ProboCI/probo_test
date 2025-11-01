@@ -1,10 +1,9 @@
 assets:
   - solr8.zip
 type: lamp
-dist: ubuntu
-php: 8.5
+php: 8.3
 nodejs: 8
-database: mariadb:11.8
+database: mssql
 solr:
   name: drupal
   version: 8
