@@ -6,7 +6,7 @@ php: 5.6
 database: mysql:5.7
 solr:
   name: drupal
-  version: 8.11.4
+  version: 8
   core_archive: solr8.zip
   core_folder: solr8
   compression: zip
