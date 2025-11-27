@@ -1,7 +1,7 @@
 assets:
   - solr8.zip
 type: lamp
-php: 8.3
+php: 8.5
 nodejs: 8
 database: mariadb:11.8
 solr:
