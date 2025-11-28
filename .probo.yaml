@@ -1,7 +1,8 @@
+
 type: lamp
 dist: ubuntu
-php: '7.0'
-database: mysql:8.0
+php: '8.2'
+database: mariadb:11.4
 
 steps:
   - name: Testing
