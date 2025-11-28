@@ -1,4 +1,8 @@
-image: proboci/ubuntu:php7.1
+type: lamp
+dist: ubuntu
+php: '7.0'
+database: mysql:8.0
+
 steps:
   - name: Testing
     plugin: LAMPApp
